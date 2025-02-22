@@ -1,0 +1,5 @@
+elasticsearch==8.17.1
+ipykernel==6.29.5
+tqdm==4.67.1
+sentence-transformers==3.4.1
+matplotlib==3.10.0
