@@ -1,0 +1,16 @@
+services:
+  elasticsearch:
+    build:
+      context: .
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+    networks:
+      - es-networks
+
+networks:
+  es-networks:
+    driver: bridge
